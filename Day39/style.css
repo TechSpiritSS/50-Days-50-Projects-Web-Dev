@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Source Code Pro", monospace;
+}
+
+.background {
+  background: url("https://unsplash.com/photos/FxagGnm37J8/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8ODZ8fFBhdHRlcm5zfGVufDB8fHx8MTYzNDM5NjA2Nw&force=true&w=1920")
+    no-repeat center center/cover;
+  position: absolute;
+  top: -20px;
+  bottom: -20px;
+  left: -20px;
+  right: -20px;
+  z-index: -1;
+  filter: blur(20px);
+}
+
+.check {
+  display: none;
+}
+
+.visible {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: red;
+  transition: 0.5s ease;
+}
+
+#submitBtn {
+  border-radius: 5px;
+  background-color: green;
+}

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Rufina&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://unsplash.com/photos/GyclzZ3lBPk/download?force=true&w=1920")
+    no-repeat center center fixed;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 10px 0 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.container img {
+  object-fit: cover;
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+  max-width: 100%;
+}

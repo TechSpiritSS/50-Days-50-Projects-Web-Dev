@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Catcher Game</title>
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Catcher Game</h1>
+      <button class="btn" id="start-btn">Play Game</button>
+    </div>
+
+    <div class="screen">
+      <h1>Select the Object</h1>
+      <ul class="lists">
+        <li>
+          <button class="choose-btn">
+            <p>Money</p>
+            <img
+              src="https://pngimg.com/uploads/money/money_PNG3529.png"
+              alt="money"
+            />
+          </button>
+        </li>
+
+        <li>
+          <button class="choose-btn">
+            <p>Football</p>
+            <img
+              src="https://pngimg.com/uploads/football/football_PNG52797.png"
+              alt="football"
+            />
+          </button>
+        </li>
+
+        <li>
+          <button class="choose-btn">
+            <p>Cat</p>
+            <img
+              src="https://pngimg.com/uploads/cat/cat_PNG50533.png"
+              alt="cat"
+            />
+          </button>
+        </li>
+
+        <li>
+          <button class="choose-btn">
+            <p>Bird</p>
+            <img
+              src="https://pngimg.com/uploads/birds/birds_PNG108.png"
+              alt="bird"
+            />
+          </button>
+        </li>
+
+        <li>
+          <button class="choose-btn">
+            <p>Paper Plane</p>
+            <img
+              src="https://pngimg.com/uploads/paper_plane/paper_plane_PNG87.png"
+              alt="paper_plane"
+            />
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="screen game-container" id="game-container">
+      <h3 id="time">Time: 00:00</h3>
+      <h3 id="score">Score: 0</h3>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

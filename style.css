@@ -9,15 +9,98 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin: 0;
   padding: 20px;
+  overflow-x: hidden;
 }
 
-.links {
-  display: flex;
-  flex-direction: column;
+img {
+  max-width: 100%;
 }
 
-.link {
-  padding: 0.5rem;
+.card {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+  overflow: hidden;
+  width: 25rem;
+  margin: 1.2rem;
+  transform: translateX(400%);
+  transition: transform 0.6s ease;
+}
+
+.card:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.card.show {
+  transform: translateX(0);
+}
+
+.card-header {
+  height: 200px;
+}
+
+.card-header img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card-content {
+  background-color: #fff;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-title {
+  height: 20px;
+  margin: 0;
+}
+
+.card-excerpt {
+  color: #777;
+  margin: 10px 0 20px;
+}
+
+.animated-bg {
+  background-image: linear-gradient(
+    to right,
+    white 0%,
+    gray 10%,
+    white 20%,
+    gray 100%
+  );
+  background-size: 200% 100%;
+  animation: bgPos 1s linear infinite;
+  font-size: 0;
+}
+
+.animated-bg-text {
+  border-radius: 50px;
+  display: inline-block;
+  margin: 0;
+  height: 10px;
+  width: 100%;
+  font-size: 0;
+}
+
+@keyframes bgPos {
+  0% {
+    background-position: 50% 0;
+  }
+
+  100% {
+    background-position: -150% 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+    width: 80vw;
+  }
 }

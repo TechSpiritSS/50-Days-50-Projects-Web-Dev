@@ -73,10 +73,6 @@ function getData() {
         <div class="card-content">
           <h3 class="card-title animated-bg animated-bg-text" id="title"> <a href="${link}">${Text}</a>
           </h3>
-          <p class="card-excerpt" id="excerpt">
-            
-            <span class="animated-bg animated-bg-text">Demo Txt</span>
-          </p>
         </div>
       `;
 
